@@ -61,74 +61,70 @@
           </span>
           Don't do this
         </h2>
-        <div class="chat">
-          <p class="chat-label">A completely avoidable interaction</p>
-          <div class="message">
-            <div class="avatar" aria-hidden="true">K</div>
-            <div class="message-body">
-              <div class="meta"><strong>Keith</strong><time>2:15 PM</time></div>
-              <p>hey</p>
+        <div class="chat-grid">
+          <div class="chat-example">
+            <div class="chat">
+              <p class="chat-label">A completely avoidable interaction</p>
+
+              <div class="chat-thread">
+                <time class="chat-time">2:15 PM</time>
+
+                <div class="chat-bubble incoming">
+                  <small>Keith</small>
+                  <p>hey</p>
+                </div>
+
+                <div class="chat-bubble outgoing">
+                  <p>please don't</p>
+                </div>
+
+                <time class="chat-time">2:16 PM</time>
+
+                <div class="chat-bubble incoming">
+                  <p>quick question, do you have a sec?</p>
+                </div>
+
+                <div class="chat-bubble outgoing">
+                  <p>and there goes my last bit of free time</p>
+                </div>
+              </div>
             </div>
+
+            <p class="aside-note">
+              Notice how both people wasted valuable seconds participating in a
+              conversation that could have simply not existed.
+            </p>
           </div>
-          <div class="message">
-            <div class="avatar me" aria-hidden="true">R</div>
-            <div class="message-body">
-              <div class="meta"><strong>Me</strong><time>2:15 PM</time></div>
-              <p>please don't</p>
+
+          <div class="chat-example">
+            <div class="chat">
+              <p class="chat-label">The supposedly better way</p>
+
+              <div class="chat-thread">
+                <time class="chat-time">2:15 PM</time>
+
+                <div class="chat-bubble incoming">
+                  <small>Tom</small>
+                  <p>
+                    Hey! The production server is down. Could you take a look
+                    when you get a chance?
+                  </p>
+                </div>
+
+                <div class="chat-bubble outgoing">
+                  <p>
+                    i see you've optimized the part where you give me more work
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="message">
-            <div class="avatar" aria-hidden="true">K</div>
-            <div class="message-body">
-              <div class="meta"><strong>Keith</strong><time>2:16 PM</time></div>
-              <p>quick question, do you have a sec?</p>
-            </div>
-          </div>
-          <div class="message">
-            <div class="avatar me" aria-hidden="true">R</div>
-            <div class="message-body">
-              <div class="meta"><strong>Me</strong><time>2:16 PM</time></div>
-              <p>and there goes my last bit of free time</p>
-            </div>
+
+            <p class="aside-note">
+              A clear, direct message. Exactly what nohello.net recommends.
+              Unfortunately, it still involves contacting me.
+            </p>
           </div>
         </div>
-        <p class="aside-note">
-          Notice how both people wasted valuable seconds participating in a
-          conversation that could have simply not existed.
-        </p>
-        <div class="chat">
-          <p class="chat-label">The supposedly better way</p>
-
-          <div class="message">
-            <div class="avatar" aria-hidden="true">T</div>
-            <div class="message-body">
-              <div class="meta">
-                <strong>Tom</strong>
-                <time>2:15 PM</time>
-              </div>
-              <p>
-                Hey! The production server is down. Could you take a look when
-                you get a chance?
-              </p>
-            </div>
-          </div>
-
-          <div class="message">
-            <div class="avatar me" aria-hidden="true">R</div>
-            <div class="message-body">
-              <div class="meta">
-                <strong>Me</strong>
-                <time>2:15 PM</time>
-              </div>
-              <p>i see you've optimized the part where you give me more work</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="aside-note">
-          A clear, direct message. Exactly what nohello.net recommends.
-          Unfortunately, it still involves contacting me.
-        </p>
       </section>
 
       <section aria-labelledby="right-title">
@@ -149,89 +145,20 @@
           Instead, try this
         </h2>
 
-        <div class="chat">
+        <div class="chat chat-empty">
           <p class="chat-label">A perfect interaction</p>
 
-          <ol class="interaction-timeline">
-            <li>
-              <span class="timeline-icon" aria-hidden="true">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 320 512"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M64 160c0-53 43-96 96-96s96 43 96 96c0 42.7-27.9 78.9-66.5 91.4-28.4 9.2-61.5 35.3-61.5 76.6l0 24c0 17.7 14.3 32 32 32s32-14.3 32-32l0-24c0-1.7 .6-4.1 3.5-7.3 3-3.3 7.9-6.5 13.7-8.4 64.3-20.7 110.8-81 110.8-152.3 0-88.4-71.6-160-160-160S0 71.6 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm96 352c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40z"
-                  />
-                </svg>
-              </span>
-              <div class="timeline-content">
-                <strong>Alan has a question.</strong>
-                <p>Opens the chat and starts typing.</p>
-              </div>
-            </li>
-
-            <li>
-              <span class="timeline-icon" aria-hidden="true">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 448 512"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M136.7 5.9C141.1-7.2 153.3-16 167.1-16l113.9 0c13.8 0 26 8.8 30.4 21.9L320 32 416 32c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 8.7-26.1zM32 144l384 0 0 304c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-304zm88 64c-13.3 0-24 10.7-24 24l0 192c0 13.3 10.7 24 24 24s24-10.7 24-24l0-192c0-13.3-10.7-24-24-24zm104 0c-13.3 0-24 10.7-24 24l0 192c0 13.3 10.7 24 24 24s24-10.7 24-24l0-192c0-13.3-10.7-24-24-24zm104 0c-13.3 0-24 10.7-24 24l0 192c0 13.3 10.7 24 24 24s24-10.7 24-24l0-192c0-13.3-10.7-24-24-24z"
-                  />
-                </svg>
-              </span>
-              <div class="timeline-content">
-                <strong>Alan thinks twice.</strong>
-                <p>Deletes the message and decides to figure it out himself.</p>
-              </div>
-            </li>
-
-            <li>
-              <span class="timeline-icon" aria-hidden="true">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 512 512"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                  />
-                </svg>
-              </span>
-              <div class="timeline-content">
-                <strong>Alan finds the answer.</strong>
-                <p>
-                  Turns out the solution was a Google search away. Who knew?
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <span class="timeline-icon success" aria-hidden="true">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 448 512"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"
-                  />
-                </svg>
-              </span>
-              <div class="timeline-content">
-                <strong>Meanwhile, I'm enjoying my day.</strong>
-                <p>Completely unaware that any of this happened.</p>
-              </div>
-            </li>
-          </ol>
+          <div class="chat-empty-content">
+            <p>No messages yet.</p>
+            <small>Beautiful, isn't it?</small>
+          </div>
         </div>
+
+        <p class="aside-note">
+          Alan had a question. He started typing, thought twice, deleted the
+          message, and found the answer himself. Meanwhile, I'm enjoying my day,
+          completely unaware that any of this happened.
+        </p>
 
         <p class="aside-note">
           Zero notifications. Zero interruptions. Zero response time. Everyone
