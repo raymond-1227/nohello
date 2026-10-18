@@ -4,6 +4,6 @@
 
 ## About
 
-This website is built using [Pico CSS](https://picocss.com) and [Typed.js](https://github.com/mattboldt/typed.js)
+This website is built using [Pico CSS](https://picocss.com) and [Typed.js](https://github.com/mattboldt/typed.js), no static site generator is used.
 
 Due to the fact Typed.js uses GPLv3 license, I have to release the project under GPLv3 license as well
